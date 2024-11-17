@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Poker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="images/PlannePoker.png" alt="Logo Planning Poker">
+        </div>
+
+        <div class="header-title">
+            <h1>Planning Poker</h1>
+            <p>Link da sala: <span id="room-link">https://planningpoker.com/room/123456</span></p>
+            <p>Participantes: <span id="room-people">0</span> / <span id="room-max-people">18</span> pessoas</p>
+            <p>Tempo: <span id="room-time">30</span> segundos</p>
+        </div>
+
+       <!--  <div class="header-actions">
+            <p class="header-actions-title">Tipo de pontuação:</p>
+            <div class="header-actions-item">
+                <input type="radio" name="type-points" id="room-type-fibonacci">
+                <label for="room-type-fibonacci">Fibanacci</label>
+
+                <input type="radio" name="type-points" id="room-type-standard">
+                <label for="room-type-standard">Padrão</label>
+            </div>
+
+
+            <p class="header-actions-title">Adicionar Tempo:</p>
+            <div class="header-actions-item">
+                <input type="checkbox" name="active-time" id="room-active-time">
+                <label for="room-active-time">Ativar</label>
+            </div>
+
+            <p class="header-actions-title">Tempo:</p>
+            <div class="header-actions-item-column">
+                <input type="number" name="time" id="room-time" placeholder="30">
+                <small><p class="header-actions-item-description">Obs: Tempo em segundos</p></small></br>
+            </div>
+
+            <button class="button">
+                Criar sala
+            </button>
+        </div> -->
+
+        <div class="header-user">
+            <img src="images/icons/user.svg" alt="User">
+        </div>
+    </header>
+
+    <main>
+       <div class="room">
+
+        <!-- Cima -->
+        <div class="user-choice" style="position: absolute; top: 2%; left: 10%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 22%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 34%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 46%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 58%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 70%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 2%; left: 82%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <!-- Esquerda -->
+
+        <div class="user-choice" style="position: absolute; top: 26%; left: 10%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 51%; left: 10%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <!-- Direita -->
+        
+        <div class="user-choice" style="position: absolute; top: 26%; left: 82%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 51%; left: 82%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+        
+        <!-- Baixo -->
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 10%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 22%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 34%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 46%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 58%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 70%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+        <div class="user-choice" style="position: absolute; top: 75%; left: 82%;">
+            <p class="user-choice-title">Usuário</p>
+            <div class="card">1</div>
+        </div>
+
+
+        <!-- Tabela -->
+        <div class="table">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">5</div>
+            <div class="card">8</div>
+            <div class="card">13</div>
+            <div class="card">21</div>
+            <div class="card">?</div>
+        </div>
+       </div>
+    </main>
+</body>
+</html>
